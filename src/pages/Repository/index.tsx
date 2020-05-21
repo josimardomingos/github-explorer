@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useRouteMatch, Link } from 'react-router-dom';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { useRouteMatch, Link } from 'react-router-dom';
 
-import api from '../../services/api';
-
-import { Header, RepositoryInfo, Issues } from './styles';
 import logoImg from '../../assets/logo.svg';
+import api from '../../services/api';
+import { Header, RepositoryInfo, Issues } from './styles';
 
 interface RepositoryParams {
   repository: string;
